@@ -2,8 +2,8 @@
 
 Actividad práctica de **Programación Web I**: tres aplicaciones con formularios HTML, CSS y JavaScript nativo (sin frameworks, sin Flexbox ni Grid).
 
-- **Página publicada:** _(https://neerpss.github.io/Actividad-practica-Alicia-en-el-pais-de-las-maravillas/)_
-- **Video explicativo:** _(https://youtu.be/X4_HOlHynYM)_
+- **Página publicada:** [https://neerpss.github.io/Actividad-practica-Alicia-en-el-pais-de-las-maravillas/](https://neerpss.github.io/Actividad-practica-Alicia-en-el-pais-de-las-maravillas/)
+- **Video explicativo:** [https://youtu.be/X4_HOlHynYM](https://youtu.be/X4_HOlHynYM)
 
 ## Cómo usarla
 1. Descarga o clona el repositorio.
@@ -60,79 +60,39 @@ evidencias/        (capturas de pantalla)
 - Escribir `i <= n` como `i < n` en el `for`: se pierde el último número.
 - Confundir `=` (asignar) con `===` (comparar).
 
+## Casos de prueba
+
 ### Ejercicio 1 (puerta de 60 cm)
 | # | Entrada (altura, ml) | Esperado | Obtenido |
 |---|---|---|---|
-| 1 | 150, 60 | Altura 60 cm; puede pasar |Altura final: 60 cm.
-¡Alicia puede pasar por la puerta! |
-| 2 | 150, 20 | Altura 120 cm; no puede pasar |Altura final: 120 cm.
-Alicia todavía no puede pasar: la puerta mide 60 cm. |
-| 3 | 100, 40 | Altura 60 cm (límite); puede pasar |Altura final: 60 cm.
-¡Alicia puede pasar por la puerta! |
-| 4 | −5, 10  | Error: altura inválida |La altura debe ser mayor que 0 y no pasar de 300 cm. |
-| 5 | 150, 91 | Error: poción fuera de rango |La poción debe estar entre 1 y 90 ml. |
-| 6 | (vacío), 10 | Error: completar campos |Completa los dos campos con números. |
+| 1 | 150, 60 | Altura 60 cm; puede pasar | Altura final: 60 cm.<br>¡Alicia puede pasar por la puerta! |
+| 2 | 150, 20 | Altura 120 cm; no puede pasar | Altura final: 120 cm.<br>Alicia todavía no puede pasar: la puerta mide 60 cm. |
+| 3 | 100, 40 | Altura 60 cm (límite); puede pasar | Altura final: 60 cm.<br>¡Alicia puede pasar por la puerta! |
+| 4 | −5, 10  | Error: altura inválida | La altura debe ser mayor que 0 y no pasar de 300 cm. |
+| 5 | 150, 91 | Error: poción fuera de rango | La poción debe estar entre 1 y 90 ml. |
+| 6 | (vacío), 10 | Error: completar campos | Completa los dos campos con números. |
 
 ### Ejercicio 2
 | # | Entrada (nombre, bebida, tazas) | Esperado | Obtenido |
 |---|---|---|---|
-| 1 | Ana, Chocolate, 2 | Subtotal 24, descuento 0, total Bs 24.00 |
-Invitado: Ana
-Bebida: Chocolate caliente
-Tazas: 2
-Precio unitario: Bs 12.00
-Subtotal: Bs 24.00
-Descuento: Bs 0.00
-Total: Bs 24.00 |
-| 2 | Luis, Té, 5 | Subtotal 40, descuento 4, total Bs 36.00 |
-Invitado: Luis
-Bebida: Té de menta
-Tazas: 5
-Precio unitario: Bs 8.00
-Subtotal: Bs 40.00
-Descuento: Bs 4.00
-Total: Bs 36.00 |
-| 3 | Sofía, Café, 4 | Subtotal 40, descuento 0, total Bs 40.00 |
-Invitado: Sofia
-Bebida: Café
-Tazas: 4
-Precio unitario: Bs 10.00
-Subtotal: Bs 40.00
-Descuento: Bs 0.00
-Total: Bs 40.00 |
-| 4 | Pedro, Limonada, 20 | Subtotal 140, descuento 14, total Bs 126.00 |
-Invitado: Pedro
-Bebida: Limonada
-Tazas: 20
-Precio unitario: Bs 7.00
-Subtotal: Bs 140.00
-Descuento: Bs 14.00
-Total: Bs 126.00 |
-| 5 | (vacío), Té, 2 | Error: nombre vacío |Escribe el nombre del invitado. |
-| 6 | Ana, Té, 2.5 | Error: tazas no entero |Las tazas deben ser un número entero entre 1 y 20. |
-| 7 | Ana, Té, 21 | Error: máximo 20 tazas |Las tazas deben ser un número entero entre 1 y 20. |
+| 1 | Ana, Chocolate, 2 | Subtotal 24, descuento 0, total Bs 24.00 | Invitado: Ana<br>Bebida: Chocolate caliente<br>Tazas: 2<br>Precio unitario: Bs 12.00<br>Subtotal: Bs 24.00<br>Descuento: Bs 0.00<br>Total: Bs 24.00 |
+| 2 | Luis, Té, 5 | Subtotal 40, descuento 4, total Bs 36.00 | Invitado: Luis<br>Bebida: Té de menta<br>Tazas: 5<br>Precio unitario: Bs 8.00<br>Subtotal: Bs 40.00<br>Descuento: Bs 4.00<br>Total: Bs 36.00 |
+| 3 | Sofía, Café, 4 | Subtotal 40, descuento 0, total Bs 40.00 | Invitado: Sofia<br>Bebida: Café<br>Tazas: 4<br>Precio unitario: Bs 10.00<br>Subtotal: Bs 40.00<br>Descuento: Bs 0.00<br>Total: Bs 40.00 |
+| 4 | Pedro, Limonada, 20 | Subtotal 140, descuento 14, total Bs 126.00 | Invitado: Pedro<br>Bebida: Limonada<br>Tazas: 20<br>Precio unitario: Bs 7.00<br>Subtotal: Bs 140.00<br>Descuento: Bs 14.00<br>Total: Bs 126.00 |
+| 5 | (vacío), Té, 2 | Error: nombre vacío | Escribe el nombre del invitado. |
+| 6 | Ana, Té, 2.5 | Error: tazas no entero | Las tazas deben ser un número entero entre 1 y 20. |
+| 7 | Ana, Té, 21 | Error: máximo 20 tazas | Las tazas deben ser un número entero entre 1 y 20. |
 
 ### Ejercicio 3
 | # | Entrada (cartas) | Esperado | Obtenido |
 |---|---|---|---|
-| 1 | 5 | Pares 2 (suma 6); impares 3 (suma 9); mayor: impares |Secuencia: 1 (impar), 2 (par), 3 (impar), 4 (par), 5 (impar)
-Pares: 2 cartas, suma 6
-Impares: 3 cartas, suma 9
-Los impares tienen la mayor suma. |
-| 2 | 1 | Pares 0 (suma 0); impares 1 (suma 1); mayor: impares |Secuencia: 1 (impar)
-Pares: 0 cartas, suma 0
-Impares: 1 cartas, suma 1
-Los impares tienen la mayor suma. |
-| 3 | 2 | Pares 1 (suma 2); impares 1 (suma 1); mayor: pares |Secuencia: 1 (impar), 2 (par)
-Pares: 1 cartas, suma 2
-Impares: 1 cartas, suma 1
-Los pares tienen la mayor suma. |
-| 4 | 100 | Pares 50 (suma 2550); impares 50 (suma 2500); mayor: pares |Pares: 50 cartas, suma 2550
-Impares: 50 cartas, suma 2500
-Los pares tienen la mayor suma. |
-| 5 | 0 | Error: fuera de rango |Escribe un número entero entre 1 y 100. |
-| 6 | 101 | Error: fuera de rango |Escribe un número entero entre 1 y 100. |
-| 7 | 3.5 | Error: no es entero |Escribe un número entero entre 1 y 100. |
+| 1 | 5 | Pares 2 (suma 6); impares 3 (suma 9); mayor: impares | Secuencia: 1 (impar), 2 (par), 3 (impar), 4 (par), 5 (impar)<br>Pares: 2 cartas, suma 6<br>Impares: 3 cartas, suma 9<br>Los impares tienen la mayor suma. |
+| 2 | 1 | Pares 0 (suma 0); impares 1 (suma 1); mayor: impares | Secuencia: 1 (impar)<br>Pares: 0 cartas, suma 0<br>Impares: 1 cartas, suma 1<br>Los impares tienen la mayor suma. |
+| 3 | 2 | Pares 1 (suma 2); impares 1 (suma 1); mayor: pares | Secuencia: 1 (impar), 2 (par)<br>Pares: 1 cartas, suma 2<br>Impares: 1 cartas, suma 1<br>Los pares tienen la mayor suma. |
+| 4 | 100 | Pares 50 (suma 2550); impares 50 (suma 2500); mayor: pares | Pares: 50 cartas, suma 2550<br>Impares: 50 cartas, suma 2500<br>Los pares tienen la mayor suma. |
+| 5 | 0 | Error: fuera de rango | Escribe un número entero entre 1 y 100. |
+| 6 | 101 | Error: fuera de rango | Escribe un número entero entre 1 y 100. |
+| 7 | 3.5 | Error: no es entero | Escribe un número entero entre 1 y 100. |
 
 ## Capturas
 
