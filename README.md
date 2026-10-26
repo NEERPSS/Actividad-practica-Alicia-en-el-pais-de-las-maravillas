@@ -3,7 +3,7 @@
 Actividad práctica de **Programación Web I**: tres aplicaciones con formularios HTML, CSS y JavaScript nativo (sin frameworks, sin Flexbox ni Grid).
 
 - **Página publicada:** _(https://neerpss.github.io/Actividad-practica-Alicia-en-el-pais-de-las-maravillas/)_
-- **Video explicativo:** _()_
+- **Video explicativo:** _(https://youtu.be/X4_HOlHynYM)_
 
 ## Cómo usarla
 1. Descarga o clona el repositorio.
