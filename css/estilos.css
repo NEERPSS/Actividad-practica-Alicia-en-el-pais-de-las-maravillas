@@ -1,0 +1,58 @@
+/* Paleta: azul de Alicia, mostaza del Sombrerero, rojo de la Reina */
+body {
+  margin: 0;
+  background: #E9EFF5;
+  color: #1B2A41;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+header, footer { background: #1B2A41; color: #F4F7FA; text-align: center; padding: 24px 16px; }
+footer { font-size: 14px; }
+h1, h2 { font-family: Georgia, "Times New Roman", serif; }
+h1 { margin: 0 0 8px; font-size: 32px; }
+header p, footer p { margin: 0; }
+main { max-width: 640px; margin: 0 auto; padding: 16px; }
+
+.tarjeta {
+  background: #FFFFFF;
+  border: 3px solid #2F6690;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.tarjeta h2 { margin-top: 0; font-size: 24px; }
+.merienda { border-color: #8A5410; }
+.reina { border-color: #9E1B32; }
+
+label { display: block; margin-top: 12px; font-weight: bold; }
+input, select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 4px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #5B6B7F;
+  border-radius: 6px;
+  background: #FFFFFF;
+  color: #1B2A41;
+}
+button {
+  margin-top: 16px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #2F6690;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.merienda button { background: #8A5410; }
+.reina button { background: #9E1B32; }
+input:focus, select:focus, button:focus { outline: 3px solid #E0A526; outline-offset: 2px; }
+
+.resultado { margin: 16px 0 0; white-space: pre-line; border-radius: 6px; }
+.resultado.ok, .resultado.error { padding: 12px; }
+.resultado.ok { background: #E3F3E6; color: #14502A; }
+.resultado.error { background: #FBE4E7; color: #7A1020; }

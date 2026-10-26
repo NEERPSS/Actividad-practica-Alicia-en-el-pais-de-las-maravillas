@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alicia en el país de las maravillas</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Alicia en el país de las maravillas</h1>
+    <p>Tres desafíos para practicar formularios y JavaScript.</p>
+  </header>
+
+  <main>
+    <!-- Ejercicio 1 -->
+    <section class="tarjeta pocion" aria-labelledby="titulo1">
+      <h2 id="titulo1">1. La poción mágica de Alicia</h2>
+      <p>La puerta mide <strong>60 cm</strong>. Regla de la poción: cada mililitro reduce un 1 % de la altura inicial de Alicia (rango permitido: 1 a 90 ml).</p>
+      <form id="form-pocion" novalidate>
+        <label for="altura">Altura inicial de Alicia (cm)</label>
+        <input type="number" id="altura" step="any" placeholder="Ej: 150">
+        <label for="pocion">Poción consumida (ml)</label>
+        <input type="number" id="pocion" step="any" placeholder="Ej: 60">
+        <button type="submit">Beber la poción</button>
+      </form>
+      <p id="resultado-pocion" class="resultado" aria-live="polite"></p>
+    </section>
+
+    <!-- Ejercicio 2 -->
+    <section class="tarjeta merienda" aria-labelledby="titulo2">
+      <h2 id="titulo2">2. La merienda del Sombrerero Loco</h2>
+      <p>Máximo 20 tazas por pedido. Si pides 5 tazas o más, recibes 10 % de descuento.</p>
+      <form id="form-merienda" novalidate>
+        <label for="invitado">Nombre del invitado</label>
+        <input type="text" id="invitado" placeholder="Ej: Liebre de Marzo">
+        <label for="bebida">Bebida</label>
+        <select id="bebida">
+          <option value="">Elige una bebida</option>
+          <option value="te" data-nombre="Té de menta">Té de menta (Bs 8)</option>
+          <option value="chocolate" data-nombre="Chocolate caliente">Chocolate caliente (Bs 12)</option>
+          <option value="cafe" data-nombre="Café">Café (Bs 10)</option>
+          <option value="limonada" data-nombre="Limonada">Limonada (Bs 7)</option>
+        </select>
+        <label for="tazas">Cantidad de tazas</label>
+        <input type="number" id="tazas" placeholder="Ej: 3">
+        <button type="submit">Calcular cuenta</button>
+      </form>
+      <p id="resultado-merienda" class="resultado" aria-live="polite"></p>
+    </section>
+
+    <!-- Ejercicio 3 -->
+    <section class="tarjeta reina" aria-labelledby="titulo3">
+      <h2 id="titulo3">3. El desafío de la Reina de Corazones</h2>
+      <p>La Reina tiene cartas numeradas desde 1. Indica cuántas (de 1 a 100) y las clasificaremos en pares e impares.</p>
+      <form id="form-reina" novalidate>
+        <label for="cartas">Cantidad de cartas</label>
+        <input type="number" id="cartas" placeholder="Ej: 10">
+        <button type="submit">Analizar cartas</button>
+      </form>
+      <p id="resultado-reina" class="resultado" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer><p>Programación Web I · Actividad práctica de JavaScript</p></footer>
+
+  <script src="js/comun.js"></script>
+  <script src="js/ejercicio1.js"></script>
+  <script src="js/ejercicio2.js"></script>
+  <script src="js/ejercicio3.js"></script>
+</body>
+</html>
